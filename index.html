@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TLG Infotech - Coming Soon</title>
+    <title>🔷 TLG Infotech - Coming Soon</title>
+    <link rel="icon" href="logo.png" type="image/png">
     <style>
         * {
             margin: 0;
@@ -41,6 +42,19 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        .company-logo {
+            width: clamp(60px, 8vw, 100px);
+            height: auto;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 20px rgba(72, 187, 255, 0.5));
+            transition: all 0.3s ease;
+        }
+
+        .company-logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 30px rgba(72, 187, 255, 0.8));
         }
 
         .company-name {
@@ -155,6 +169,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="logo.png" alt="TLG Infotech Logo" class="company-logo">
         <h1 class="company-name">TLG INFOTECH</h1>
         <h2 class="coming-soon">COMING SOON</h2>
         <p class="subtitle">We're working on something great.</p>
